@@ -1,0 +1,681 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.Analysis.props(24,5): warning MSB4211: Свойству "MsvcAnalysisPluginPath" в первый раз присваивается значение, но оно уже было использовано в "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CodeAnalysis.Extensions.props (33,5)".
+cl : командная строка  warning D9035: использование параметра "Gm" нежелательно, он будет удален в следующих выпусках
+  stdafx.cpp
+cl : командная строка  warning D9035: использование параметра "Gm" нежелательно, он будет удален в следующих выпусках
+  XmlWriter.cpp
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(21,1): warning C4005: HIGH_SURROGATE_START: изменение макроопределения
+  (компиляция исходного файла "/XmlWriter.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(131,1):
+  см. предыдущее определение "HIGH_SURROGATE_START"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(23,1): warning C4005: HIGH_SURROGATE_END: изменение макроопределения
+  (компиляция исходного файла "/XmlWriter.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(132,1):
+  см. предыдущее определение "HIGH_SURROGATE_END"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(25,1): warning C4005: LOW_SURROGATE_START: изменение макроопределения
+  (компиляция исходного файла "/XmlWriter.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(133,1):
+  см. предыдущее определение "LOW_SURROGATE_START"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(27,1): warning C4005: LOW_SURROGATE_END: изменение макроопределения
+  (компиляция исходного файла "/XmlWriter.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(134,1):
+  см. предыдущее определение "LOW_SURROGATE_END"
+  
+  XmlReader.cpp
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(21,1): warning C4005: HIGH_SURROGATE_START: изменение макроопределения
+  (компиляция исходного файла "/XmlReader.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(131,1):
+  см. предыдущее определение "HIGH_SURROGATE_START"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(23,1): warning C4005: HIGH_SURROGATE_END: изменение макроопределения
+  (компиляция исходного файла "/XmlReader.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(132,1):
+  см. предыдущее определение "HIGH_SURROGATE_END"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(25,1): warning C4005: LOW_SURROGATE_START: изменение макроопределения
+  (компиляция исходного файла "/XmlReader.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(133,1):
+  см. предыдущее определение "LOW_SURROGATE_START"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(27,1): warning C4005: LOW_SURROGATE_END: изменение макроопределения
+  (компиляция исходного файла "/XmlReader.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(134,1):
+  см. предыдущее определение "LOW_SURROGATE_END"
+  
+D:\Programming\XRayEngine\Source\BugTrap\XmlReader.cpp(1582,11): warning C4456: объявление "arrChar" скрывает предыдущее локальное объявление
+  (компиляция исходного файла "/XmlReader.cpp")
+  D:\Programming\XRayEngine\Source\BugTrap\XmlReader.cpp(1491,8):
+   см. объявление "arrChar"
+  
+D:\Programming\XRayEngine\Source\BugTrap\XmlReader.cpp(1583,9): warning C4456: объявление "nCharSize" скрывает предыдущее локальное объявление
+  (компиляция исходного файла "/XmlReader.cpp")
+  D:\Programming\XRayEngine\Source\BugTrap\XmlReader.cpp(1492,6):
+   см. объявление "nCharSize"
+  
+  XmlLogFile.cpp
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(21,1): warning C4005: HIGH_SURROGATE_START: изменение макроопределения
+  (компиляция исходного файла "/XmlLogFile.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(131,1):
+  см. предыдущее определение "HIGH_SURROGATE_START"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(23,1): warning C4005: HIGH_SURROGATE_END: изменение макроопределения
+  (компиляция исходного файла "/XmlLogFile.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(132,1):
+  см. предыдущее определение "HIGH_SURROGATE_END"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(25,1): warning C4005: LOW_SURROGATE_START: изменение макроопределения
+  (компиляция исходного файла "/XmlLogFile.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(133,1):
+  см. предыдущее определение "LOW_SURROGATE_START"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(27,1): warning C4005: LOW_SURROGATE_END: изменение макроопределения
+  (компиляция исходного файла "/XmlLogFile.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(134,1):
+  см. предыдущее определение "LOW_SURROGATE_END"
+  
+  WaitDlg.cpp
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(21,1): warning C4005: HIGH_SURROGATE_START: изменение макроопределения
+  (компиляция исходного файла "/WaitDlg.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(131,1):
+  см. предыдущее определение "HIGH_SURROGATE_START"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(23,1): warning C4005: HIGH_SURROGATE_END: изменение макроопределения
+  (компиляция исходного файла "/WaitDlg.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(132,1):
+  см. предыдущее определение "HIGH_SURROGATE_END"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(25,1): warning C4005: LOW_SURROGATE_START: изменение макроопределения
+  (компиляция исходного файла "/WaitDlg.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(133,1):
+  см. предыдущее определение "LOW_SURROGATE_START"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(27,1): warning C4005: LOW_SURROGATE_END: изменение макроопределения
+  (компиляция исходного файла "/WaitDlg.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(134,1):
+  см. предыдущее определение "LOW_SURROGATE_END"
+  
+  WaitCursor.cpp
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(21,1): warning C4005: HIGH_SURROGATE_START: изменение макроопределения
+  (компиляция исходного файла "/WaitCursor.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(131,1):
+  см. предыдущее определение "HIGH_SURROGATE_START"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(23,1): warning C4005: HIGH_SURROGATE_END: изменение макроопределения
+  (компиляция исходного файла "/WaitCursor.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(132,1):
+  см. предыдущее определение "HIGH_SURROGATE_END"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(25,1): warning C4005: LOW_SURROGATE_START: изменение макроопределения
+  (компиляция исходного файла "/WaitCursor.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(133,1):
+  см. предыдущее определение "LOW_SURROGATE_START"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(27,1): warning C4005: LOW_SURROGATE_END: изменение макроопределения
+  (компиляция исходного файла "/WaitCursor.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(134,1):
+  см. предыдущее определение "LOW_SURROGATE_END"
+  
+  TransferProgressDlg.cpp
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(21,1): warning C4005: HIGH_SURROGATE_START: изменение макроопределения
+  (компиляция исходного файла "/TransferProgressDlg.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(131,1):
+  см. предыдущее определение "HIGH_SURROGATE_START"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(23,1): warning C4005: HIGH_SURROGATE_END: изменение макроопределения
+  (компиляция исходного файла "/TransferProgressDlg.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(132,1):
+  см. предыдущее определение "HIGH_SURROGATE_END"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(25,1): warning C4005: LOW_SURROGATE_START: изменение макроопределения
+  (компиляция исходного файла "/TransferProgressDlg.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(133,1):
+  см. предыдущее определение "LOW_SURROGATE_START"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(27,1): warning C4005: LOW_SURROGATE_END: изменение макроопределения
+  (компиляция исходного файла "/TransferProgressDlg.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(134,1):
+  см. предыдущее определение "LOW_SURROGATE_END"
+  
+  TextView.cpp
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(21,1): warning C4005: HIGH_SURROGATE_START: изменение макроопределения
+  (компиляция исходного файла "/TextView.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(131,1):
+  см. предыдущее определение "HIGH_SURROGATE_START"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(23,1): warning C4005: HIGH_SURROGATE_END: изменение макроопределения
+  (компиляция исходного файла "/TextView.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(132,1):
+  см. предыдущее определение "HIGH_SURROGATE_END"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(25,1): warning C4005: LOW_SURROGATE_START: изменение макроопределения
+  (компиляция исходного файла "/TextView.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(133,1):
+  см. предыдущее определение "LOW_SURROGATE_START"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(27,1): warning C4005: LOW_SURROGATE_END: изменение макроопределения
+  (компиляция исходного файла "/TextView.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(134,1):
+  см. предыдущее определение "LOW_SURROGATE_END"
+  
+D:\Programming\XRayEngine\Source\BugTrap\TextView.cpp(645,16): warning C4456: объявление "rLineInfo" скрывает предыдущее локальное объявление
+  (компиляция исходного файла "/TextView.cpp")
+  D:\Programming\XRayEngine\Source\BugTrap\TextView.cpp(625,20):
+   см. объявление "rLineInfo"
+  
+D:\Programming\XRayEngine\Source\BugTrap\TextView.cpp(712,22): warning C4456: объявление "rLineInfo" скрывает предыдущее локальное объявление
+  (компиляция исходного файла "/TextView.cpp")
+  D:\Programming\XRayEngine\Source\BugTrap\TextView.cpp(700,19):
+   см. объявление "rLineInfo"
+  
+D:\Programming\XRayEngine\Source\BugTrap\TextView.cpp(727,22): warning C4456: объявление "rLineInfo" скрывает предыдущее локальное объявление
+  (компиляция исходного файла "/TextView.cpp")
+  D:\Programming\XRayEngine\Source\BugTrap\TextView.cpp(700,19):
+   см. объявление "rLineInfo"
+  
+D:\Programming\XRayEngine\Source\BugTrap\TextView.cpp(775,21): warning C4456: объявление "rLineInfo" скрывает предыдущее локальное объявление
+  (компиляция исходного файла "/TextView.cpp")
+  D:\Programming\XRayEngine\Source\BugTrap\TextView.cpp(700,19):
+   см. объявление "rLineInfo"
+  
+D:\Programming\XRayEngine\Source\BugTrap\TextView.cpp(796,15): warning C4456: объявление "rLineInfo" скрывает предыдущее локальное объявление
+  (компиляция исходного файла "/TextView.cpp")
+  D:\Programming\XRayEngine\Source\BugTrap\TextView.cpp(700,19):
+   см. объявление "rLineInfo"
+  
+D:\Programming\XRayEngine\Source\BugTrap\TextView.cpp(805,20): warning C4456: объявление "rLineInfo" скрывает предыдущее локальное объявление
+  (компиляция исходного файла "/TextView.cpp")
+  D:\Programming\XRayEngine\Source\BugTrap\TextView.cpp(700,19):
+   см. объявление "rLineInfo"
+  
+D:\Programming\XRayEngine\Source\BugTrap\TextView.cpp(818,16): warning C4456: объявление "rLineInfo" скрывает предыдущее локальное объявление
+  (компиляция исходного файла "/TextView.cpp")
+  D:\Programming\XRayEngine\Source\BugTrap\TextView.cpp(805,20):
+   см. объявление "rLineInfo"
+  
+  TextLogFile.cpp
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(21,1): warning C4005: HIGH_SURROGATE_START: изменение макроопределения
+  (компиляция исходного файла "/TextLogFile.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(131,1):
+  см. предыдущее определение "HIGH_SURROGATE_START"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(23,1): warning C4005: HIGH_SURROGATE_END: изменение макроопределения
+  (компиляция исходного файла "/TextLogFile.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(132,1):
+  см. предыдущее определение "HIGH_SURROGATE_END"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(25,1): warning C4005: LOW_SURROGATE_START: изменение макроопределения
+  (компиляция исходного файла "/TextLogFile.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(133,1):
+  см. предыдущее определение "LOW_SURROGATE_START"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(27,1): warning C4005: LOW_SURROGATE_END: изменение макроопределения
+  (компиляция исходного файла "/TextLogFile.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(134,1):
+  см. предыдущее определение "LOW_SURROGATE_END"
+  
+  TextFormat.cpp
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(21,1): warning C4005: HIGH_SURROGATE_START: изменение макроопределения
+  (компиляция исходного файла "/TextFormat.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(131,1):
+  см. предыдущее определение "HIGH_SURROGATE_START"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(23,1): warning C4005: HIGH_SURROGATE_END: изменение макроопределения
+  (компиляция исходного файла "/TextFormat.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(132,1):
+  см. предыдущее определение "HIGH_SURROGATE_END"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(25,1): warning C4005: LOW_SURROGATE_START: изменение макроопределения
+  (компиляция исходного файла "/TextFormat.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(133,1):
+  см. предыдущее определение "LOW_SURROGATE_START"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(27,1): warning C4005: LOW_SURROGATE_END: изменение макроопределения
+  (компиляция исходного файла "/TextFormat.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(134,1):
+  см. предыдущее определение "LOW_SURROGATE_END"
+  
+  SymEngineNet.cpp
+  SymEngine.cpp
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(21,1): warning C4005: HIGH_SURROGATE_START: изменение макроопределения
+  (компиляция исходного файла "/SymEngine.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(131,1):
+  см. предыдущее определение "HIGH_SURROGATE_START"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(23,1): warning C4005: HIGH_SURROGATE_END: изменение макроопределения
+  (компиляция исходного файла "/SymEngine.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(132,1):
+  см. предыдущее определение "HIGH_SURROGATE_END"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(25,1): warning C4005: LOW_SURROGATE_START: изменение макроопределения
+  (компиляция исходного файла "/SymEngine.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(133,1):
+  см. предыдущее определение "LOW_SURROGATE_START"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(27,1): warning C4005: LOW_SURROGATE_END: изменение макроопределения
+  (компиляция исходного файла "/SymEngine.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(134,1):
+  см. предыдущее определение "LOW_SURROGATE_END"
+  
+D:\Programming\XRayEngine\Source\BugTrap\SymEngine.cpp(993,2): warning C4996: 'GetVersionExA': объявлен deprecate
+  (компиляция исходного файла "/SymEngine.cpp")
+  
+D:\Programming\XRayEngine\Source\BugTrap\SymEngine.cpp(2721,14): warning C4477: "sprintf_s": в строке форматирования "%08lX" требуется аргумент типа "unsigned long", но вариативный аргумент "2" имеет тип "DWORD64"
+  (компиляция исходного файла "/SymEngine.cpp")
+  D:\Programming\XRayEngine\Source\BugTrap\SymEngine.cpp(2721,14):
+  рекомендуется использовать "%llX" в строке форматирования
+  D:\Programming\XRayEngine\Source\BugTrap\SymEngine.cpp(2721,14):
+  рекомендуется использовать "%I64X" в строке форматирования
+  
+  StrStream.cpp
+  StrHolder.cpp
+  Splitter.cpp
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(21,1): warning C4005: HIGH_SURROGATE_START: изменение макроопределения
+  (компиляция исходного файла "/Splitter.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(131,1):
+  см. предыдущее определение "HIGH_SURROGATE_START"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(23,1): warning C4005: HIGH_SURROGATE_END: изменение макроопределения
+  (компиляция исходного файла "/Splitter.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(132,1):
+  см. предыдущее определение "HIGH_SURROGATE_END"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(25,1): warning C4005: LOW_SURROGATE_START: изменение макроопределения
+  (компиляция исходного файла "/Splitter.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(133,1):
+  см. предыдущее определение "LOW_SURROGATE_START"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(27,1): warning C4005: LOW_SURROGATE_END: изменение макроопределения
+  (компиляция исходного файла "/Splitter.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(134,1):
+  см. предыдущее определение "LOW_SURROGATE_END"
+  
+  SimpleDlg.cpp
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(21,1): warning C4005: HIGH_SURROGATE_START: изменение макроопределения
+  (компиляция исходного файла "/SimpleDlg.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(131,1):
+  см. предыдущее определение "HIGH_SURROGATE_START"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(23,1): warning C4005: HIGH_SURROGATE_END: изменение макроопределения
+  (компиляция исходного файла "/SimpleDlg.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(132,1):
+  см. предыдущее определение "HIGH_SURROGATE_END"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(25,1): warning C4005: LOW_SURROGATE_START: изменение макроопределения
+  (компиляция исходного файла "/SimpleDlg.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(133,1):
+  см. предыдущее определение "LOW_SURROGATE_START"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(27,1): warning C4005: LOW_SURROGATE_END: изменение макроопределения
+  (компиляция исходного файла "/SimpleDlg.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(134,1):
+  см. предыдущее определение "LOW_SURROGATE_END"
+  
+  SendMailDlg.cpp
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(21,1): warning C4005: HIGH_SURROGATE_START: изменение макроопределения
+  (компиляция исходного файла "/SendMailDlg.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(131,1):
+  см. предыдущее определение "HIGH_SURROGATE_START"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(23,1): warning C4005: HIGH_SURROGATE_END: изменение макроопределения
+  (компиляция исходного файла "/SendMailDlg.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(132,1):
+  см. предыдущее определение "HIGH_SURROGATE_END"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(25,1): warning C4005: LOW_SURROGATE_START: изменение макроопределения
+  (компиляция исходного файла "/SendMailDlg.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(133,1):
+  см. предыдущее определение "LOW_SURROGATE_START"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(27,1): warning C4005: LOW_SURROGATE_END: изменение макроопределения
+  (компиляция исходного файла "/SendMailDlg.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(134,1):
+  см. предыдущее определение "LOW_SURROGATE_END"
+  
+  ResManager.cpp
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(21,1): warning C4005: HIGH_SURROGATE_START: изменение макроопределения
+  (компиляция исходного файла "/ResManager.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(131,1):
+  см. предыдущее определение "HIGH_SURROGATE_START"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(23,1): warning C4005: HIGH_SURROGATE_END: изменение макроопределения
+  (компиляция исходного файла "/ResManager.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(132,1):
+  см. предыдущее определение "HIGH_SURROGATE_END"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(25,1): warning C4005: LOW_SURROGATE_START: изменение макроопределения
+  (компиляция исходного файла "/ResManager.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(133,1):
+  см. предыдущее определение "LOW_SURROGATE_START"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(27,1): warning C4005: LOW_SURROGATE_END: изменение макроопределения
+  (компиляция исходного файла "/ResManager.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(134,1):
+  см. предыдущее определение "LOW_SURROGATE_END"
+  
+  PreviewDlg.cpp
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(21,1): warning C4005: HIGH_SURROGATE_START: изменение макроопределения
+  (компиляция исходного файла "/PreviewDlg.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(131,1):
+  см. предыдущее определение "HIGH_SURROGATE_START"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(23,1): warning C4005: HIGH_SURROGATE_END: изменение макроопределения
+  (компиляция исходного файла "/PreviewDlg.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(132,1):
+  см. предыдущее определение "HIGH_SURROGATE_END"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(25,1): warning C4005: LOW_SURROGATE_START: изменение макроопределения
+  (компиляция исходного файла "/PreviewDlg.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(133,1):
+  см. предыдущее определение "LOW_SURROGATE_START"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(27,1): warning C4005: LOW_SURROGATE_END: изменение макроопределения
+  (компиляция исходного файла "/PreviewDlg.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(134,1):
+  см. предыдущее определение "LOW_SURROGATE_END"
+  
+  OutputStream.cpp
+  NetThunks.cpp
+  Создание кода...
+  Компиляция...
+  MemStream.cpp
+  MainDlg.cpp
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(21,1): warning C4005: HIGH_SURROGATE_START: изменение макроопределения
+  (компиляция исходного файла "/MainDlg.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(131,1):
+  см. предыдущее определение "HIGH_SURROGATE_START"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(23,1): warning C4005: HIGH_SURROGATE_END: изменение макроопределения
+  (компиляция исходного файла "/MainDlg.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(132,1):
+  см. предыдущее определение "HIGH_SURROGATE_END"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(25,1): warning C4005: LOW_SURROGATE_START: изменение макроопределения
+  (компиляция исходного файла "/MainDlg.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(133,1):
+  см. предыдущее определение "LOW_SURROGATE_START"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(27,1): warning C4005: LOW_SURROGATE_END: изменение макроопределения
+  (компиляция исходного файла "/MainDlg.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(134,1):
+  см. предыдущее определение "LOW_SURROGATE_END"
+  
+  MachineStateDlg.cpp
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(21,1): warning C4005: HIGH_SURROGATE_START: изменение макроопределения
+  (компиляция исходного файла "/MachineStateDlg.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(131,1):
+  см. предыдущее определение "HIGH_SURROGATE_START"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(23,1): warning C4005: HIGH_SURROGATE_END: изменение макроопределения
+  (компиляция исходного файла "/MachineStateDlg.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(132,1):
+  см. предыдущее определение "HIGH_SURROGATE_END"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(25,1): warning C4005: LOW_SURROGATE_START: изменение макроопределения
+  (компиляция исходного файла "/MachineStateDlg.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(133,1):
+  см. предыдущее определение "LOW_SURROGATE_START"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(27,1): warning C4005: LOW_SURROGATE_END: изменение макроопределения
+  (компиляция исходного файла "/MachineStateDlg.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(134,1):
+  см. предыдущее определение "LOW_SURROGATE_END"
+  
+  MachineInfoDlg.cpp
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(21,1): warning C4005: HIGH_SURROGATE_START: изменение макроопределения
+  (компиляция исходного файла "/MachineInfoDlg.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(131,1):
+  см. предыдущее определение "HIGH_SURROGATE_START"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(23,1): warning C4005: HIGH_SURROGATE_END: изменение макроопределения
+  (компиляция исходного файла "/MachineInfoDlg.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(132,1):
+  см. предыдущее определение "HIGH_SURROGATE_END"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(25,1): warning C4005: LOW_SURROGATE_START: изменение макроопределения
+  (компиляция исходного файла "/MachineInfoDlg.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(133,1):
+  см. предыдущее определение "LOW_SURROGATE_START"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(27,1): warning C4005: LOW_SURROGATE_END: изменение макроопределения
+  (компиляция исходного файла "/MachineInfoDlg.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(134,1):
+  см. предыдущее определение "LOW_SURROGATE_END"
+  
+  LogFile.cpp
+  LayoutManager.cpp
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(21,1): warning C4005: HIGH_SURROGATE_START: изменение макроопределения
+  (компиляция исходного файла "/LayoutManager.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(131,1):
+  см. предыдущее определение "HIGH_SURROGATE_START"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(23,1): warning C4005: HIGH_SURROGATE_END: изменение макроопределения
+  (компиляция исходного файла "/LayoutManager.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(132,1):
+  см. предыдущее определение "HIGH_SURROGATE_END"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(25,1): warning C4005: LOW_SURROGATE_START: изменение макроопределения
+  (компиляция исходного файла "/LayoutManager.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(133,1):
+  см. предыдущее определение "LOW_SURROGATE_START"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(27,1): warning C4005: LOW_SURROGATE_END: изменение макроопределения
+  (компиляция исходного файла "/LayoutManager.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(134,1):
+  см. предыдущее определение "LOW_SURROGATE_END"
+  
+  InputStream.cpp
+  ImageView.cpp
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(21,1): warning C4005: HIGH_SURROGATE_START: изменение макроопределения
+  (компиляция исходного файла "/ImageView.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(131,1):
+  см. предыдущее определение "HIGH_SURROGATE_START"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(23,1): warning C4005: HIGH_SURROGATE_END: изменение макроопределения
+  (компиляция исходного файла "/ImageView.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(132,1):
+  см. предыдущее определение "HIGH_SURROGATE_END"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(25,1): warning C4005: LOW_SURROGATE_START: изменение макроопределения
+  (компиляция исходного файла "/ImageView.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(133,1):
+  см. предыдущее определение "LOW_SURROGATE_START"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(27,1): warning C4005: LOW_SURROGATE_END: изменение макроопределения
+  (компиляция исходного файла "/ImageView.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(134,1):
+  см. предыдущее определение "LOW_SURROGATE_END"
+  
+  HyperLink.cpp
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(21,1): warning C4005: HIGH_SURROGATE_START: изменение макроопределения
+  (компиляция исходного файла "/HyperLink.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(131,1):
+  см. предыдущее определение "HIGH_SURROGATE_START"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(23,1): warning C4005: HIGH_SURROGATE_END: изменение макроопределения
+  (компиляция исходного файла "/HyperLink.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(132,1):
+  см. предыдущее определение "HIGH_SURROGATE_END"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(25,1): warning C4005: LOW_SURROGATE_START: изменение макроопределения
+  (компиляция исходного файла "/HyperLink.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(133,1):
+  см. предыдущее определение "LOW_SURROGATE_START"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(27,1): warning C4005: LOW_SURROGATE_END: изменение макроопределения
+  (компиляция исходного файла "/HyperLink.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(134,1):
+  см. предыдущее определение "LOW_SURROGATE_END"
+  
+  HexView.cpp
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(21,1): warning C4005: HIGH_SURROGATE_START: изменение макроопределения
+  (компиляция исходного файла "/HexView.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(131,1):
+  см. предыдущее определение "HIGH_SURROGATE_START"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(23,1): warning C4005: HIGH_SURROGATE_END: изменение макроопределения
+  (компиляция исходного файла "/HexView.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(132,1):
+  см. предыдущее определение "HIGH_SURROGATE_END"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(25,1): warning C4005: LOW_SURROGATE_START: изменение макроопределения
+  (компиляция исходного файла "/HexView.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(133,1):
+  см. предыдущее определение "LOW_SURROGATE_START"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(27,1): warning C4005: LOW_SURROGATE_END: изменение макроопределения
+  (компиляция исходного файла "/HexView.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(134,1):
+  см. предыдущее определение "LOW_SURROGATE_END"
+  
+  Globals.cpp
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(21,1): warning C4005: HIGH_SURROGATE_START: изменение макроопределения
+  (компиляция исходного файла "/Globals.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(131,1):
+  см. предыдущее определение "HIGH_SURROGATE_START"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(23,1): warning C4005: HIGH_SURROGATE_END: изменение макроопределения
+  (компиляция исходного файла "/Globals.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(132,1):
+  см. предыдущее определение "HIGH_SURROGATE_END"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(25,1): warning C4005: LOW_SURROGATE_START: изменение макроопределения
+  (компиляция исходного файла "/Globals.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(133,1):
+  см. предыдущее определение "LOW_SURROGATE_START"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(27,1): warning C4005: LOW_SURROGATE_END: изменение макроопределения
+  (компиляция исходного файла "/Globals.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(134,1):
+  см. предыдущее определение "LOW_SURROGATE_END"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Globals.cpp(30,2): warning C4996: 'GetVersionExA': объявлен deprecate
+  (компиляция исходного файла "/Globals.cpp")
+  
+  FileStream.cpp
+  EnumProcess.cpp
+D:\Programming\XRayEngine\Source\BugTrap\EnumProcess.cpp(82,3): warning C4996: 'GetVersionExA': объявлен deprecate
+  (компиляция исходного файла "/EnumProcess.cpp")
+  
+  Encoding.cpp
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(21,1): warning C4005: HIGH_SURROGATE_START: изменение макроопределения
+  (компиляция исходного файла "/Encoding.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(131,1):
+  см. предыдущее определение "HIGH_SURROGATE_START"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(23,1): warning C4005: HIGH_SURROGATE_END: изменение макроопределения
+  (компиляция исходного файла "/Encoding.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(132,1):
+  см. предыдущее определение "HIGH_SURROGATE_END"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(25,1): warning C4005: LOW_SURROGATE_START: изменение макроопределения
+  (компиляция исходного файла "/Encoding.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(133,1):
+  см. предыдущее определение "LOW_SURROGATE_START"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(27,1): warning C4005: LOW_SURROGATE_END: изменение макроопределения
+  (компиляция исходного файла "/Encoding.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(134,1):
+  см. предыдущее определение "LOW_SURROGATE_END"
+  
+  ColHelper.cpp
+  CMapi.cpp
+  BugTrapUtils.cpp
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(21,1): warning C4005: HIGH_SURROGATE_START: изменение макроопределения
+  (компиляция исходного файла "/BugTrapUtils.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(131,1):
+  см. предыдущее определение "HIGH_SURROGATE_START"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(23,1): warning C4005: HIGH_SURROGATE_END: изменение макроопределения
+  (компиляция исходного файла "/BugTrapUtils.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(132,1):
+  см. предыдущее определение "HIGH_SURROGATE_END"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(25,1): warning C4005: LOW_SURROGATE_START: изменение макроопределения
+  (компиляция исходного файла "/BugTrapUtils.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(133,1):
+  см. предыдущее определение "LOW_SURROGATE_START"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(27,1): warning C4005: LOW_SURROGATE_END: изменение макроопределения
+  (компиляция исходного файла "/BugTrapUtils.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(134,1):
+  см. предыдущее определение "LOW_SURROGATE_END"
+  
+  BugTrapUI.cpp
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(21,1): warning C4005: HIGH_SURROGATE_START: изменение макроопределения
+  (компиляция исходного файла "/BugTrapUI.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(131,1):
+  см. предыдущее определение "HIGH_SURROGATE_START"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(23,1): warning C4005: HIGH_SURROGATE_END: изменение макроопределения
+  (компиляция исходного файла "/BugTrapUI.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(132,1):
+  см. предыдущее определение "HIGH_SURROGATE_END"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(25,1): warning C4005: LOW_SURROGATE_START: изменение макроопределения
+  (компиляция исходного файла "/BugTrapUI.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(133,1):
+  см. предыдущее определение "LOW_SURROGATE_START"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(27,1): warning C4005: LOW_SURROGATE_END: изменение макроопределения
+  (компиляция исходного файла "/BugTrapUI.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(134,1):
+  см. предыдущее определение "LOW_SURROGATE_END"
+  
+D:\Programming\XRayEngine\Source\BugTrap\BugTrapUI.cpp(306,33): warning C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  (компиляция исходного файла "/BugTrapUI.cpp")
+  
+D:\Programming\XRayEngine\Source\BugTrap\BugTrapUI.cpp(309,26): warning C4996: 'gethostbyname': Use getaddrinfo() or GetAddrInfoW() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  (компиляция исходного файла "/BugTrapUI.cpp")
+  
+D:\Programming\XRayEngine\Source\BugTrap\BugTrapUI.cpp(319,20): warning C4996: 'WSASocketA': Use WSASocketW() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  (компиляция исходного файла "/BugTrapUI.cpp")
+  
+  BugTrapNet.cpp
+  BugTrap.cpp
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(21,1): warning C4005: HIGH_SURROGATE_START: изменение макроопределения
+  (компиляция исходного файла "/BugTrap.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(131,1):
+  см. предыдущее определение "HIGH_SURROGATE_START"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(23,1): warning C4005: HIGH_SURROGATE_END: изменение макроопределения
+  (компиляция исходного файла "/BugTrap.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(132,1):
+  см. предыдущее определение "HIGH_SURROGATE_END"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(25,1): warning C4005: LOW_SURROGATE_START: изменение макроопределения
+  (компиляция исходного файла "/BugTrap.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(133,1):
+  см. предыдущее определение "LOW_SURROGATE_START"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(27,1): warning C4005: LOW_SURROGATE_END: изменение макроопределения
+  (компиляция исходного файла "/BugTrap.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(134,1):
+  см. предыдущее определение "LOW_SURROGATE_END"
+  
+  Создание кода...
+  Компиляция...
+  AboutDlg.cpp
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(21,1): warning C4005: HIGH_SURROGATE_START: изменение макроопределения
+  (компиляция исходного файла "/AboutDlg.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(131,1):
+  см. предыдущее определение "HIGH_SURROGATE_START"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(23,1): warning C4005: HIGH_SURROGATE_END: изменение макроопределения
+  (компиляция исходного файла "/AboutDlg.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(132,1):
+  см. предыдущее определение "HIGH_SURROGATE_END"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(25,1): warning C4005: LOW_SURROGATE_START: изменение макроопределения
+  (компиляция исходного файла "/AboutDlg.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(133,1):
+  см. предыдущее определение "LOW_SURROGATE_START"
+  
+D:\Programming\XRayEngine\Source\BugTrap\Encoding.h(27,1): warning C4005: LOW_SURROGATE_END: изменение макроопределения
+  (компиляция исходного файла "/AboutDlg.cpp")
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnls.h(134,1):
+  см. предыдущее определение "LOW_SURROGATE_END"
+  
+  Создание кода...
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1434,5): error MSB3191: Не удается создать каталог "x:\libraries\". Не удалось найти часть пути "x:\libraries\".
