@@ -1,4 +1,6 @@
 // new(0)
+#include "xrCore.h"
+
 template <class T>
 IC	T*		xr_new		()
 {

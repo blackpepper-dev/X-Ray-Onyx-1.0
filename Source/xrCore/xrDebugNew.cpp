@@ -3,7 +3,7 @@
 
 #include "xrdebug.h"
 
-#include "dxerr9.h"
+//#include "dxerr9.h"
 
 #pragma warning(push)
 #pragma warning(disable:4995)
@@ -46,6 +46,7 @@ extern bool shared_str_initialized;
 
 #include <new.h>							// for _set_new_mode
 #include <signal.h>							// for signals
+#include "../ETools/D3DX_Wrapper.h"
 
 #if 0//def DEBUG
 #	define USE_OWN_ERROR_MESSAGE_WINDOW
@@ -292,7 +293,7 @@ LPCSTR xrDebug::error2string	(long code)
 
 #ifdef _M_AMD64
 #else
-	result				= DXGetErrorDescription9	(code);
+//	result				= DXGetErrorDescription9	(code);
 #endif
 	if (0==result) 
 	{
@@ -533,7 +534,7 @@ void save_mini_dump			(_EXCEPTION_POINTERS *pExceptionInfo)
 			}
 			if (hFile!=INVALID_HANDLE_VALUE)
 			{
-				_MINIDUMP_EXCEPTION_INFORMATION ExInfo;
+				_MINIDUMP_EXCEPTION_INFORMATION ExInfo{};
 
 				ExInfo.ThreadId				= ::GetCurrentThreadId();
 				ExInfo.ExceptionPointers	= pExceptionInfo;
@@ -576,7 +577,7 @@ void save_mini_dump			(_EXCEPTION_POINTERS *pExceptionInfo)
 
 void format_message	(LPSTR buffer, const u32 &buffer_size)
 {
-    LPVOID		message;
+	LPVOID		message = nullptr;
     DWORD		error_code = GetLastError(); 
 
 	if (!error_code) {
@@ -687,7 +688,7 @@ LONG WINAPI UnhandledFilter	(_EXCEPTION_POINTERS *pExceptionInfo)
 #else
     typedef int		(__cdecl * _PNH)( size_t );
     _CRTIMP int		__cdecl _set_new_mode( int );
-    _CRTIMP _PNH	__cdecl _set_new_handler( _PNH );
+//    _CRTIMP _PNH	__cdecl _set_new_handler( _PNH );
 
 #ifndef USE_BUG_TRAP
 	void _terminate		()

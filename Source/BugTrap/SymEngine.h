@@ -479,9 +479,9 @@ private:
 	/// Get process environment strings.
 	static void GetEnvironmentStrings(CXmlWriter& rXmlWriter);
 	/// Get date-time string.
-	void GetDateTime(PTSTR pszDateTime, DWORD dwDateTimeSize);
+	void GetDateTime(PTSTR pszDateTime, DWORD dwDateTimeSize) const;
 	/// Get time-stamp string.
-	void GetTimeStamp(PTSTR pszTimeStamp, DWORD dwTimeStampSize);
+	void GetTimeStamp(PTSTR pszTimeStamp, DWORD dwTimeStampSize) const;
 	/// Generate comprehensive text information about the crash.
 	void GetErrorLog(CUTF8EncStream& rEncStream, CEnumProcess* pEnumProcess);
 	/// Generate comprehensive text information about the crash.
@@ -514,7 +514,7 @@ public:
 	/// Writes crash log to file.
 	BOOL WriteLog(PCTSTR pszFileName, CEnumProcess* pEnumProcess);
 	/// Writes crash dump to file.
-	BOOL WriteDump(PCTSTR pszFileName);
+	BOOL WriteDump(PCTSTR pszFileName) const;
 	/// Writes screen-shot to file.
 	BOOL WriteScreenShot(PCTSTR pszFileName);
 	/// Get extension of report file.

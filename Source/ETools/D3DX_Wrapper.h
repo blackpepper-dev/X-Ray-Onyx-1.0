@@ -1,3 +1,6 @@
+#include <d3d9.h>
+#include "../../packages/Microsoft.DXSDK.D3DX.9.29.952.8/build/native/include/d3dx9tex.h"
+
 #ifndef D3DX_WraperH
 #define D3DX_WraperH
 #pragma once
@@ -13,11 +16,11 @@ extern "C" {
 		D3DX_GetDriverLevel(
 		LPDIRECT3DDEVICE9		pDevice);
 
-	ETOOLS_API HRESULT WINAPI
-		D3DX_GetImageInfoFromFileInMemory(
-		LPCVOID					pSrcData,
-		UINT					SrcDataSize,
-		D3DXIMAGE_INFO*			pSrcInfo);
+	//ETOOLS_API HRESULT WINAPI
+	//	D3DX_GetImageInfoFromFileInMemory(
+	//	LPCVOID					pSrcData,
+	//	UINT					SrcDataSize,
+	//	D3DXIMAGE_INFO*			pSrcInfo);
 
 	ETOOLS_API HRESULT WINAPI
 		D3DX_CreateCubeTextureFromFileInMemoryEx(

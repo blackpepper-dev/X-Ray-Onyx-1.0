@@ -294,7 +294,7 @@ CSymEngine::CScreenShot::CScreenShot(void)
 				HBITMAP hbmpSafeBitmap = SelectBitmap(hMemDC, hBitmap);
 				BitBlt(hMemDC, 0, 0, nWidth, nHeight, hDisplayDC, 0, 0, SRCCOPY);
 
-				BITMAP bmpInfo;
+				BITMAP bmpInfo{};
 				GetObject(hBitmap, sizeof(bmpInfo), &bmpInfo);
 				WORD wPalSize, wBmpBits = bmpInfo.bmPlanes * bmpInfo.bmBitsPixel;
 				if (wBmpBits <= 1)
@@ -914,7 +914,7 @@ BOOL CSymEngine::GetCpuInfo(DWORD dwCpuNum, CCpuInfo& rCpuInfo)
 		HKEY hKey;
 		if (RegOpenKeyEx(HKEY_LOCAL_MACHINE, szCentralProcessorPath, 0l, KEY_READ, &hKey) == ERROR_SUCCESS)
 		{
-			DWORD dwValue, dwValueType, dwValueSize;
+			DWORD dwValue = 0, dwValueType = 0, dwValueSize = 0;
 			dwValueSize = sizeof(dwValue);
 			if (RegQueryValueEx(hKey, _T("~MHz"), NULL, &dwValueType, (PBYTE)&dwValue, &dwValueSize) == ERROR_SUCCESS && dwValueType == REG_DWORD)
 				_ultot_s(dwValue, rCpuInfo.m_szCpuSpeed, countof(rCpuInfo.m_szCpuSpeed), 10);
@@ -988,7 +988,7 @@ void CSymEngine::GetOsInfo(COsInfo& rOsInfo)
 	static const TCHAR szWindows2000[] = _T("Windows 2000");
 	static const TCHAR szWindowsXP[] = _T("Windows XP");
 
-	OSVERSIONINFO osvi;
+	OSVERSIONINFO osvi{};
 	osvi.dwOSVersionInfoSize = sizeof(osvi);
 	GetVersionEx(&osvi);
 
@@ -1897,7 +1897,7 @@ BOOL CSymEngine::GetVersionString(PCTSTR pszModuleName, PTSTR pszVersionString, 
 	if (dwSize == 0)
 		return FALSE;
 	UINT uLength;
-	VS_FIXEDFILEINFO* pFileVerInfo;
+	VS_FIXEDFILEINFO* pFileVerInfo = nullptr;
 	PBYTE pVersionInfo = new BYTE[dwSize];
 	if (pVersionInfo == NULL)
 		return FALSE;
@@ -1922,7 +1922,7 @@ BOOL CSymEngine::GetVersionString(PCTSTR pszModuleName, PTSTR pszVersionString, 
  * @param pszDateTime - pointer to the date-time buffer.
  * @param dwDateTimeSize - date-time buffer size.
  */
-void CSymEngine::GetDateTime(PTSTR pszDateTime, DWORD dwDateTimeSize)
+void CSymEngine::GetDateTime(PTSTR pszDateTime, DWORD dwDateTimeSize) const
 {
 	_ASSERTE(dwDateTimeSize > 0);
 	// Computers use different locales, so it's desirable to use universal date and time format.
@@ -1937,11 +1937,11 @@ void CSymEngine::GetDateTime(PTSTR pszDateTime, DWORD dwDateTimeSize)
  * @param pszTimeStamp - pointer to the time-stamp buffer.
  * @param dwTimeStampSize - time-stamp buffer size.
  */
-void CSymEngine::GetTimeStamp(PTSTR pszTimeStamp, DWORD dwTimeStampSize)
+void CSymEngine::GetTimeStamp(PTSTR pszTimeStamp, DWORD dwTimeStampSize) const
 {
 	FILETIME ftime;
 	SystemTimeToFileTime(&m_DateTime, &ftime);
-	ULARGE_INTEGER uint;
+	ULARGE_INTEGER uint{};
 	uint.LowPart = ftime.dwLowDateTime;
 	uint.HighPart = ftime.dwHighDateTime;
 	_ui64tot_s(uint.QuadPart, pszTimeStamp, dwTimeStampSize, 10);
@@ -2435,61 +2435,62 @@ void CSymEngine::GetErrorLog(CXmlWriter& rXmlWriter, CEnumProcess* pEnumProcess)
  */
 BOOL CSymEngine::AddFileToArchive(zipFile hZipFile, PCTSTR pszFilePath, PCTSTR pszFileName)
 {
-	PCSTR pszFileNameA;
-#ifdef _UNICODE
-	CHAR szFileNameA[MAX_PATH];
-	WideCharToMultiByte(CP_ACP, 0, pszFileName, -1, szFileNameA, countof(szFileNameA), NULL, NULL);
-	pszFileNameA = szFileNameA;
-#else
-	pszFileNameA = pszFileName;
-#endif
-	BOOL bResult = FALSE;
-	HANDLE hFile = CreateFile(pszFilePath, GENERIC_READ, FILE_SHARE_READ, NULL, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL);
-	if (hFile != INVALID_HANDLE_VALUE)
-	{
-		DWORD dwFileSize = GetFileSize(hFile, NULL);
-		DWORD dwBufferSize = min(dwFileSize, g_dwMaxBufferSize);
-		PBYTE pFileBuffer = new BYTE[dwBufferSize];
-		if (pFileBuffer)
-		{
-			if (zipOpenNewFileInZip(hZipFile, pszFileNameA, NULL, NULL, 0, NULL, 0, NULL, Z_DEFLATED, Z_BEST_COMPRESSION) == Z_OK)
-			{
-				bResult = TRUE;
-				for (;;)
-				{
-					DWORD dwProcessedNumber = 0;
-					bResult = ReadFile(hFile, pFileBuffer, dwBufferSize, &dwProcessedNumber, NULL);
-					if (! bResult || dwProcessedNumber == 0)
-						break;
-					bResult = zipWriteInFileInZip(hZipFile, pFileBuffer, dwProcessedNumber) == Z_OK;
-					if (! bResult)
-						break;
-				}
-				if (zipCloseFileInZip(hZipFile) != Z_OK)
-					bResult = FALSE;
-			}
-			delete[] pFileBuffer;
-		}
-		CloseHandle(hFile);
-	}
-	else
-	{
-		DWORD dwLastError = GetLastError();
-		if (dwLastError == ERROR_FILE_NOT_FOUND ||
-			dwLastError == ERROR_PATH_NOT_FOUND ||
-			GetFileAttributes(pszFilePath) == INVALID_FILE_ATTRIBUTES)
-		{
-			bResult = TRUE; // ignore missing files
-		}
-	}
-	return bResult;
+//	PCSTR pszFileNameA;
+//#ifdef _UNICODE
+//	CHAR szFileNameA[MAX_PATH];
+//	WideCharToMultiByte(CP_ACP, 0, pszFileName, -1, szFileNameA, countof(szFileNameA), NULL, NULL);
+//	pszFileNameA = szFileNameA;
+//#else
+//	pszFileNameA = pszFileName;
+//#endif
+//	BOOL bResult = FALSE;
+//	HANDLE hFile = CreateFile(pszFilePath, GENERIC_READ, FILE_SHARE_READ, NULL, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL);
+//	if (hFile != INVALID_HANDLE_VALUE)
+//	{
+//		DWORD dwFileSize = GetFileSize(hFile, NULL);
+//		DWORD dwBufferSize = min(dwFileSize, g_dwMaxBufferSize);
+//		PBYTE pFileBuffer = new BYTE[dwBufferSize];
+//		if (pFileBuffer)
+//		{
+//			if (zipOpenNewFileInZip(hZipFile, pszFileNameA, NULL, NULL, 0, NULL, 0, NULL, Z_DEFLATED, Z_BEST_COMPRESSION) == Z_OK)
+//			{
+//				bResult = TRUE;
+//				for (;;)
+//				{
+//					DWORD dwProcessedNumber = 0;
+//					bResult = ReadFile(hFile, pFileBuffer, dwBufferSize, &dwProcessedNumber, NULL);
+//					if (! bResult || dwProcessedNumber == 0)
+//						break;
+//					bResult = zipWriteInFileInZip(hZipFile, pFileBuffer, dwProcessedNumber) == Z_OK;
+//					if (! bResult)
+//						break;
+//				}
+//				if (zipCloseFileInZip(hZipFile) != Z_OK)
+//					bResult = FALSE;
+//			}
+//			delete[] pFileBuffer;
+//		}
+//		CloseHandle(hFile);
+//	}
+//	else
+//	{
+//		DWORD dwLastError = GetLastError();
+//		if (dwLastError == ERROR_FILE_NOT_FOUND ||
+//			dwLastError == ERROR_PATH_NOT_FOUND ||
+//			GetFileAttributes(pszFilePath) == INVALID_FILE_ATTRIBUTES)
+//		{
+//			bResult = TRUE; // ignore missing files
+//		}
+//	}
+//	return bResult;
+	return true;
 }
 
 /**
  * @param pszFileName - dump file name.
  * @return true if crash information has been written successfully.
  */
-BOOL CSymEngine::WriteDump(PCTSTR pszFileName)
+BOOL CSymEngine::WriteDump(PCTSTR pszFileName) const
 {
 	_ASSERTE(FMiniDumpWriteDump != NULL);
 	if (FMiniDumpWriteDump == NULL)
@@ -2502,7 +2503,7 @@ BOOL CSymEngine::WriteDump(PCTSTR pszFileName)
 	BOOL bResult;
 	if (m_pExceptionPointers != NULL)
 	{
-		MINIDUMP_EXCEPTION_INFORMATION ExInfo;
+		MINIDUMP_EXCEPTION_INFORMATION ExInfo = {};
 		ExInfo.ThreadId = GetCurrentThreadId();
 		ExInfo.ExceptionPointers = m_pExceptionPointers;
 		ExInfo.ClientPointers = TRUE;
@@ -2560,62 +2561,63 @@ BOOL CSymEngine::WriteReportFiles(PCTSTR pszFolderName, CEnumProcess* pEnumProce
  */
 BOOL CSymEngine::ArchiveReportFiles(PCTSTR pszReportFolder, PCTSTR pszArchiveFileName)
 {
-	PCSTR pszArchiveFileNameA;
-#ifdef _UNICODE
-	CHAR szArchiveFileNameA[MAX_PATH];
-	WideCharToMultiByte(CP_ACP, 0, pszArchiveFileName, -1, szArchiveFileNameA, countof(szArchiveFileNameA), NULL, NULL);
-	pszArchiveFileNameA = szArchiveFileNameA;
-#else
-	pszArchiveFileNameA = pszArchiveFileName;
-#endif
-	zipFile hZipFile = zipOpen(pszArchiveFileNameA, FALSE);
-	if (! hZipFile)
-		return FALSE;
-
-	BOOL bResult = TRUE;
-	TCHAR szFindFileTemplate[MAX_PATH];
-	PathCombine(szFindFileTemplate, pszReportFolder, _T("*"));
-	WIN32_FIND_DATA FindData;
-	HANDLE hFindFile = FindFirstFile(szFindFileTemplate, &FindData);
-	if (hFindFile != INVALID_HANDLE_VALUE)
-	{
-		BOOL bMore = TRUE;
-		while (bMore)
-		{
-			if ((FindData.dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY) == 0)
-			{
-				TCHAR szFilePath[MAX_PATH];
-				PathCombine(szFilePath, pszReportFolder, FindData.cFileName);
-				bResult = AddFileToArchive(hZipFile, szFilePath, FindData.cFileName);
-				if (! bResult)
-					break;
-			}
-			bMore = FindNextFile(hFindFile, &FindData);
-		}
-		FindClose(hFindFile);
-	}
-
-	if (bResult)
-	{
-		int nFileCount = g_arrLogLinks.GetCount();
-		for (int nFilePos = 0; nFilePos < nFileCount; ++nFilePos)
-		{
-			CLogLink* pLogLink = g_arrLogLinks[nFilePos];
-			_ASSERTE(pLogLink != NULL);
-			PCTSTR pszFilePath = pLogLink->GetLogFileName();
-			PCTSTR pszFileName = PathFindFileName(pszFilePath);
-			_ASSERTE(pszFileName != NULL);
-			bResult = AddFileToArchive(hZipFile, pszFilePath, pszFileName);
-			if (! bResult)
-				break;
-		}
-	}
-
-	if (zipClose(hZipFile, NULL) != ZIP_OK)
-		bResult = FALSE;
-	if (! bResult)
-		DeleteFile(pszArchiveFileName);
-	return bResult;
+//	PCSTR pszArchiveFileNameA;
+//#ifdef _UNICODE
+//	CHAR szArchiveFileNameA[MAX_PATH];
+//	WideCharToMultiByte(CP_ACP, 0, pszArchiveFileName, -1, szArchiveFileNameA, countof(szArchiveFileNameA), NULL, NULL);
+//	pszArchiveFileNameA = szArchiveFileNameA;
+//#else
+//	pszArchiveFileNameA = pszArchiveFileName;
+//#endif
+//	zipFile hZipFile = zipOpen(pszArchiveFileNameA, FALSE);
+//	if (! hZipFile)
+//		return FALSE;
+//
+//	BOOL bResult = TRUE;
+//	TCHAR szFindFileTemplate[MAX_PATH];
+//	PathCombine(szFindFileTemplate, pszReportFolder, _T("*"));
+//	WIN32_FIND_DATA FindData;
+//	HANDLE hFindFile = FindFirstFile(szFindFileTemplate, &FindData);
+//	if (hFindFile != INVALID_HANDLE_VALUE)
+//	{
+//		BOOL bMore = TRUE;
+//		while (bMore)
+//		{
+//			if ((FindData.dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY) == 0)
+//			{
+//				TCHAR szFilePath[MAX_PATH];
+//				PathCombine(szFilePath, pszReportFolder, FindData.cFileName);
+//				bResult = AddFileToArchive(hZipFile, szFilePath, FindData.cFileName);
+//				if (! bResult)
+//					break;
+//			}
+//			bMore = FindNextFile(hFindFile, &FindData);
+//		}
+//		FindClose(hFindFile);
+//	}
+//
+//	if (bResult)
+//	{
+//		int nFileCount = g_arrLogLinks.GetCount();
+//		for (int nFilePos = 0; nFilePos < nFileCount; ++nFilePos)
+//		{
+//			CLogLink* pLogLink = g_arrLogLinks[nFilePos];
+//			_ASSERTE(pLogLink != NULL);
+//			PCTSTR pszFilePath = pLogLink->GetLogFileName();
+//			PCTSTR pszFileName = PathFindFileName(pszFilePath);
+//			_ASSERTE(pszFileName != NULL);
+//			bResult = AddFileToArchive(hZipFile, pszFilePath, pszFileName);
+//			if (! bResult)
+//				break;
+//		}
+//	}
+//
+//	if (zipClose(hZipFile, NULL) != ZIP_OK)
+//		bResult = FALSE;
+//	if (! bResult)
+//		DeleteFile(pszArchiveFileName);
+//	return bResult;
+	return true;
 }
 
 /**
@@ -2715,7 +2717,7 @@ BOOL CSymEngine::GetNextStackTraceEntry(CStackTraceEntry& rEntry)
 	if (hModule != NULL)
 		GetModuleFileName(hModule, rEntry.m_szModule, countof(rEntry.m_szModule));
 	DWORD64 dwExceptionAddress = m_swContext.m_stFrame.AddrPC.Offset;
-	WORD wExceptionSegment; // wExceptionSegment = m_swContext.m_stFrame.AddrPC.Segment;
+	WORD wExceptionSegment = 0; // wExceptionSegment = m_swContext.m_stFrame.AddrPC.Segment;
 	__asm { mov word ptr [wExceptionSegment], cs }
 	_stprintf_s(rEntry.m_szAddress, countof(rEntry.m_szAddress),
 	            _T("%04lX:%08lX"), wExceptionSegment, dwExceptionAddress);

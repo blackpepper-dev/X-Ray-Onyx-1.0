@@ -95,23 +95,23 @@ void CFS_PathNotificator::Execute(void)
 }
 //---------------------------------------------------------------------------
 
-void CLocatorAPI::SetEventNotification()
-{
-	InitializeCriticalSection	(&CS);
-    FThread 					= new CFS_PathNotificator();
-	FThread->FNotifyOptionFlags	= FILE_NOTIFY_CHANGE_FILE_NAME|FILE_NOTIFY_CHANGE_DIR_NAME|FILE_NOTIFY_CHANGE_LAST_WRITE;
-	for(PathPairIt p_it=pathes.begin(); p_it!=pathes.end(); p_it++)
-    	if (p_it->second->m_Flags.is(FS_Path::flNotif)) FThread->RegisterPath(*p_it->second);
-    FThread->Start				();
-}
- 
-void CLocatorAPI::ClearEventNotification()
-{
-    if (FThread){
-    	FThread->Terminate		();
-	    ReleaseMutex			(FThread->FMutex); // this current thread must release the mutex
-	    xr_delete				(FThread);
-    }
-	DeleteCriticalSection		(&CS);
-}
-
+//void CLocatorAPI::SetEventNotification()
+//{
+//	InitializeCriticalSection	(&CS);
+//    FThread 					= new CFS_PathNotificator();
+//	FThread->FNotifyOptionFlags	= FILE_NOTIFY_CHANGE_FILE_NAME|FILE_NOTIFY_CHANGE_DIR_NAME|FILE_NOTIFY_CHANGE_LAST_WRITE;
+//	for(PathPairIt p_it=pathes.begin(); p_it!=pathes.end(); p_it++)
+//    	if (p_it->second->m_Flags.is(FS_Path::flNotif)) FThread->RegisterPath(*p_it->second);
+//    FThread->Start				();
+//}
+// 
+//void CLocatorAPI::ClearEventNotification()
+//{
+//    if (FThread){
+//    	FThread->Terminate		();
+//	    ReleaseMutex			(FThread->FMutex); // this current thread must release the mutex
+//	    xr_delete				(FThread);
+//    }
+//	DeleteCriticalSection		(&CS);
+//}
+//

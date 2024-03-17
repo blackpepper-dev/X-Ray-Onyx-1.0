@@ -7,7 +7,7 @@
 #include "resource.h"
 #include "dbghelp.h"
  
-#include "dxerr9.h"
+//#include "dxerr9.h"
 
 #ifdef __BORLANDC__
 	#include "d3d9.h"
@@ -86,7 +86,7 @@ void xrDebug::backend(const char* reason, const char* expression, const char *ar
 
 	// Call the dialog
 	dlgExpr				= reason;
-    sprintf             ()
+	sprintf             (dlgLine,"%s","\n");
 	dlgFile				= file;
 	sprintf				(dlgLine,"%d",line);
 	INT_PTR res			= -1;
@@ -123,7 +123,7 @@ LPCSTR xrDebug::error2string	(long code)
 
 #ifdef _M_AMD64
 #else
-	result				= DXGetErrorDescription9	(code);
+//	result				= DXGetErrorDescription9	(code);
 #endif
 	if (0==result) 
 	{
@@ -259,7 +259,7 @@ LONG WINAPI UnhandledFilter	( struct _EXCEPTION_POINTERS *pExceptionInfo )
 			}
 			if (hFile!=INVALID_HANDLE_VALUE)
 			{
-				_MINIDUMP_EXCEPTION_INFORMATION ExInfo;
+				_MINIDUMP_EXCEPTION_INFORMATION ExInfo{};
 
 				ExInfo.ThreadId				= ::GetCurrentThreadId();
 				ExInfo.ExceptionPointers	= pExceptionInfo;
