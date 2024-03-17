@@ -1,0 +1,47 @@
+﻿cl : командная строка  warning D9035: использование параметра "Gm" нежелательно, он будет удален в следующих выпусках
+cl : командная строка  warning D9035: использование параметра "Zc:forScope-" нежелательно, он будет удален в следующих выпусках
+  de_padf_integration.cpp
+  util.cpp
+  timer.cpp
+  testing.cpp
+  StepJointInternal.cpp
+  stepfast.cpp
+  step.cpp
+  rotation.cpp
+  quickstep.cpp
+  odemath.cpp
+  ode.cpp
+  obstack.cpp
+  misc.cpp
+  memory.cpp
+  matrix.cpp
+  mat.cpp
+  mass.cpp
+  lcp.cpp
+  joint.cpp
+  export-dif.cpp
+  Создание кода...
+  Компиляция...
+  error.cpp
+  collision_util.cpp
+  collision_transform.cpp
+  collision_space.cpp
+  collision_kernel.cpp
+  Bounder33.cpp
+  array.cpp
+  Создание кода...
+cl : командная строка  warning D9035: использование параметра "Gm" нежелательно, он будет удален в следующих выпусках
+cl : командная строка  warning D9035: использование параметра "Zc:forScope-" нежелательно, он будет удален в следующих выпусках
+  collision_std.cpp
+  collision_quadtreespace.cpp
+  Создание кода...
+cl : командная строка  warning D9035: использование параметра "Gm" нежелательно, он будет удален в следующих выпусках
+cl : командная строка  warning D9035: использование параметра "Zc:forScope-" нежелательно, он будет удален в следующих выпусках
+  fastltsolve.c
+  fastlsolve.c
+  fastldlt.c
+  fastdot.c
+  Создание кода...
+array.obj : warning LNK4075: не учитывается "/EDITANDCONTINUE" из-за спецификации "/SAFESEH"
+     Создается библиотека D:\Programming\X-RayEngine\\libs\ode.lib и объект D:\Programming\X-RayEngine\\libs\ode.exp
+  default.vcxproj -> D:\Programming\X-RayEngine\Bins\Debug\Win32\ode.dll

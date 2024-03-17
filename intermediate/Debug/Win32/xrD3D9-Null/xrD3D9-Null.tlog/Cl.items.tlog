@@ -1,0 +1,16 @@
+D:\Programming\X-RayEngine\Source\xr_3da\xrGame\xrD3D9-Null\IDirect3D9.cpp;D:\Programming\X-RayEngine\intermediate\Debug\Win32\xrD3D9-Null\IDirect3D9.obj
+D:\Programming\X-RayEngine\Source\xr_3da\xrGame\xrD3D9-Null\IDirect3DCubeTexture9.cpp;D:\Programming\X-RayEngine\intermediate\Debug\Win32\xrD3D9-Null\IDirect3DCubeTexture9.obj
+D:\Programming\X-RayEngine\Source\xr_3da\xrGame\xrD3D9-Null\IDirect3DDevice9.cpp;D:\Programming\X-RayEngine\intermediate\Debug\Win32\xrD3D9-Null\IDirect3DDevice9.obj
+D:\Programming\X-RayEngine\Source\xr_3da\xrGame\xrD3D9-Null\IDirect3DDevice9_Caps.cpp;D:\Programming\X-RayEngine\intermediate\Debug\Win32\xrD3D9-Null\IDirect3DDevice9_Caps.obj
+D:\Programming\X-RayEngine\Source\xr_3da\xrGame\xrD3D9-Null\IDirect3DIndexBuffer9.cpp;D:\Programming\X-RayEngine\intermediate\Debug\Win32\xrD3D9-Null\IDirect3DIndexBuffer9.obj
+D:\Programming\X-RayEngine\Source\xr_3da\xrGame\xrD3D9-Null\IDirect3DPixelShader9.cpp;D:\Programming\X-RayEngine\intermediate\Debug\Win32\xrD3D9-Null\IDirect3DPixelShader9.obj
+D:\Programming\X-RayEngine\Source\xr_3da\xrGame\xrD3D9-Null\IDirect3DQuery9.cpp;D:\Programming\X-RayEngine\intermediate\Debug\Win32\xrD3D9-Null\IDirect3DQuery9.obj
+D:\Programming\X-RayEngine\Source\xr_3da\xrGame\xrD3D9-Null\IDirect3DStateBlock9.cpp;D:\Programming\X-RayEngine\intermediate\Debug\Win32\xrD3D9-Null\IDirect3DStateBlock9.obj
+D:\Programming\X-RayEngine\Source\xr_3da\xrGame\xrD3D9-Null\IDirect3DSurface9.cpp;D:\Programming\X-RayEngine\intermediate\Debug\Win32\xrD3D9-Null\IDirect3DSurface9.obj
+D:\Programming\X-RayEngine\Source\xr_3da\xrGame\xrD3D9-Null\IDirect3DTexture9.cpp;D:\Programming\X-RayEngine\intermediate\Debug\Win32\xrD3D9-Null\IDirect3DTexture9.obj
+D:\Programming\X-RayEngine\Source\xr_3da\xrGame\xrD3D9-Null\IDirect3DVertexBuffer9.cpp;D:\Programming\X-RayEngine\intermediate\Debug\Win32\xrD3D9-Null\IDirect3DVertexBuffer9.obj
+D:\Programming\X-RayEngine\Source\xr_3da\xrGame\xrD3D9-Null\IDirect3DVertexDeclaration9.cpp;D:\Programming\X-RayEngine\intermediate\Debug\Win32\xrD3D9-Null\IDirect3DVertexDeclaration9.obj
+D:\Programming\X-RayEngine\Source\xr_3da\xrGame\xrD3D9-Null\IDirect3DVertexShader9.cpp;D:\Programming\X-RayEngine\intermediate\Debug\Win32\xrD3D9-Null\IDirect3DVertexShader9.obj
+D:\Programming\X-RayEngine\Source\xr_3da\xrGame\xrD3D9-Null\stdafx.cpp;D:\Programming\X-RayEngine\intermediate\Debug\Win32\xrD3D9-Null\stdafx.obj
+D:\Programming\X-RayEngine\Source\xr_3da\xrGame\xrD3D9-Null\xrD3D9-Null.cpp;D:\Programming\X-RayEngine\intermediate\Debug\Win32\xrD3D9-Null\xrD3D9-Null.obj
+D:\Programming\X-RayEngine\Source\xr_3da\xrGame\xrD3D9-Null\xrD3D9-Null_OutProc.cpp;D:\Programming\X-RayEngine\intermediate\Debug\Win32\xrD3D9-Null\xrD3D9-Null_OutProc.obj
