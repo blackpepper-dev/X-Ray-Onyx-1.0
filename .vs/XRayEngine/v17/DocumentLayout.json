@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Programming\\X-RayEngine\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CA2604CA-A2AC-49A1-A468-8AB5A2E6CBC9}|Source\\zlib\\zlib.vcxproj|D:\\Programming\\X-RayEngine\\Source\\zlib\\zutil.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{CA2604CA-A2AC-49A1-A468-8AB5A2E6CBC9}|Source\\zlib\\zlib.vcxproj|solutionrelative:Source\\zlib\\zutil.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA2604CA-A2AC-49A1-A468-8AB5A2E6CBC9}|Source\\zlib\\zlib.vcxproj|D:\\Programming\\X-RayEngine\\Source\\zlib\\example.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{CA2604CA-A2AC-49A1-A468-8AB5A2E6CBC9}|Source\\zlib\\zlib.vcxproj|solutionrelative:Source\\zlib\\example.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,8 +18,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "zutil.h",
+              "DocumentMoniker": "D:\\Programming\\X-RayEngine\\Source\\zlib\\zutil.h",
+              "RelativeDocumentMoniker": "Source\\zlib\\zutil.h",
+              "ToolTip": "D:\\Programming\\X-RayEngine\\Source\\zlib\\zutil.h",
+              "RelativeToolTip": "Source\\zlib\\zutil.h",
+              "ViewState": "AQIAAK0AAAAAAAAAAAAAwMcAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-03-17T17:29:00.345Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "example.c",
+              "DocumentMoniker": "D:\\Programming\\X-RayEngine\\Source\\zlib\\example.c",
+              "RelativeDocumentMoniker": "Source\\zlib\\example.c",
+              "ToolTip": "D:\\Programming\\X-RayEngine\\Source\\zlib\\example.c",
+              "RelativeToolTip": "Source\\zlib\\example.c",
+              "ViewState": "AQIAABECAAAAAAAAAAAIwDUCAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-03-17T17:28:50.729Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"

@@ -1,1 +1,88 @@
-﻿  xrQSlim.vcxproj -> D:\Programming\X-RayEngine\libs\xrQSlim.lib
+﻿cl : командная строка  warning D9035: использование параметра "Zc:forScope-" нежелательно, он будет удален в следующих выпусках
+  MxBlockModel.cpp
+D:\Programming\X-RayEngine\Source\xrQSlim\src\MxBlockModel.cpp(280,65): warning C4458: объявление "flags" скрывает член класса
+  (компиляция исходного файла "/src/MxBlockModel.cpp")
+  D:\Programming\X-RayEngine\Source\xrQSlim\src\MxBlockModel.h(36,18):
+   см. объявление "MxBlockModel::flags"
+  
+  MxGeom3D.cpp
+  MxMat3-jacobi.cpp
+  MxMat4-jacobi.cpp
+  MxMatrix.cpp
+  MxPropSlim.cpp
+D:\Programming\X-RayEngine\Source\xrQSlim\src\MxPropSlim.cpp(51,56): warning C4458: объявление "m" скрывает член класса
+  (компиляция исходного файла "/src/MxPropSlim.cpp")
+  D:\Programming\X-RayEngine\Source\xrQSlim\src\MxStdSlim.h(38,17):
+   см. объявление "MxStdSlim::m"
+  
+D:\Programming\X-RayEngine\Source\xrQSlim\src\MxPropSlim.cpp(577,15): warning C4458: объявление "star" скрывает член класса
+  (компиляция исходного файла "/src/MxPropSlim.cpp")
+  D:\Programming\X-RayEngine\Source\xrQSlim\src\MxPropSlim.h(44,16):
+   см. объявление "MxPropSlim::star"
+  
+D:\Programming\X-RayEngine\Source\xrQSlim\src\MxPropSlim.cpp(592,15): warning C4458: объявление "star" скрывает член класса
+  (компиляция исходного файла "/src/MxPropSlim.cpp")
+  D:\Programming\X-RayEngine\Source\xrQSlim\src\MxPropSlim.h(44,16):
+   см. объявление "MxPropSlim::star"
+  
+  MxQMetric.cpp
+  MxQMetric3.cpp
+  MxQSlim.cpp
+D:\Programming\X-RayEngine\Source\xrQSlim\src\MxQSlim.cpp(438,15): warning C4458: объявление "star" скрывает член класса
+  (компиляция исходного файла "/src/MxQSlim.cpp")
+  D:\Programming\X-RayEngine\Source\xrQSlim\src\MxQSlim.h(62,16):
+   см. объявление "MxEdgeQSlim::star"
+  
+D:\Programming\X-RayEngine\Source\xrQSlim\src\MxQSlim.cpp(451,47): warning C4458: объявление "edges" скрывает член класса
+  (компиляция исходного файла "/src/MxQSlim.cpp")
+  D:\Programming\X-RayEngine\Source\xrQSlim\src\MxQSlim.h(61,13):
+   см. объявление "MxEdgeQSlim::edges"
+  
+  MxStdModel.cpp
+D:\Programming\X-RayEngine\Source\xrQSlim\src\MxStdModel.cpp(108,72): warning C4458: объявление "faces" скрывает член класса
+  (компиляция исходного файла "/src/MxStdModel.cpp")
+  D:\Programming\X-RayEngine\Source\xrQSlim\src\MxBlockModel.h(40,24):
+   см. объявление "MxBlockModel::faces"
+  
+D:\Programming\X-RayEngine\Source\xrQSlim\src\MxStdModel.cpp(149,49): warning C4458: объявление "faces" скрывает член класса
+  (компиляция исходного файла "/src/MxStdModel.cpp")
+  D:\Programming\X-RayEngine\Source\xrQSlim\src\MxBlockModel.h(40,24):
+   см. объявление "MxBlockModel::faces"
+  
+D:\Programming\X-RayEngine\Source\xrQSlim\src\MxStdModel.cpp(156,61): warning C4458: объявление "faces" скрывает член класса
+  (компиляция исходного файла "/src/MxStdModel.cpp")
+  D:\Programming\X-RayEngine\Source\xrQSlim\src\MxBlockModel.h(40,24):
+   см. объявление "MxBlockModel::faces"
+  
+D:\Programming\X-RayEngine\Source\xrQSlim\src\MxStdModel.cpp(172,23): warning C4458: объявление "faces" скрывает член класса
+  (компиляция исходного файла "/src/MxStdModel.cpp")
+  D:\Programming\X-RayEngine\Source\xrQSlim\src\MxBlockModel.h(40,24):
+   см. объявление "MxBlockModel::faces"
+  
+D:\Programming\X-RayEngine\Source\xrQSlim\src\MxStdModel.cpp(189,24): warning C4458: объявление "faces" скрывает член класса
+  (компиляция исходного файла "/src/MxStdModel.cpp")
+  D:\Programming\X-RayEngine\Source\xrQSlim\src\MxBlockModel.h(40,24):
+   см. объявление "MxBlockModel::faces"
+  
+D:\Programming\X-RayEngine\Source\xrQSlim\src\MxStdModel.cpp(320,13): warning C4458: объявление "faces" скрывает член класса
+  (компиляция исходного файла "/src/MxStdModel.cpp")
+  D:\Programming\X-RayEngine\Source\xrQSlim\src\MxBlockModel.h(40,24):
+   см. объявление "MxBlockModel::faces"
+  
+D:\Programming\X-RayEngine\Source\xrQSlim\src\MxStdModel.cpp(352,13): warning C4458: объявление "faces" скрывает член класса
+  (компиляция исходного файла "/src/MxStdModel.cpp")
+  D:\Programming\X-RayEngine\Source\xrQSlim\src\MxBlockModel.h(40,24):
+   см. объявление "MxBlockModel::faces"
+  
+D:\Programming\X-RayEngine\Source\xrQSlim\src\MxStdModel.cpp(450,48): warning C4458: объявление "faces" скрывает член класса
+  (компиляция исходного файла "/src/MxStdModel.cpp")
+  D:\Programming\X-RayEngine\Source\xrQSlim\src\MxBlockModel.h(40,24):
+   см. объявление "MxBlockModel::faces"
+  
+  MxStdSlim.cpp
+  mat2.cpp
+  mat3.cpp
+  mat4.cpp
+  mixmops.cpp
+  Создание кода...
+  xrQSlim.vcxproj -> D:\Programming\X-RayEngine\libs\xrQSlim.lib
