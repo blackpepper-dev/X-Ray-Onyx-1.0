@@ -52,7 +52,7 @@ const char* GetGameVersion	(const char*KeyValue)
 	{
 		return GAME_VERSION;
 	};
-//	return KeyValue;	
+	//return KeyValue;	
 	return GAME_VERSION;
 }
 
