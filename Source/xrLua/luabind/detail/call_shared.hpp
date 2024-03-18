@@ -20,39 +20,51 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
 // OR OTHER DEALINGS IN THE SOFTWARE.
 
-#define LUA_LIB
-#include "..//luabind/config.hpp"
-#include <..//luabind/lua_include.hpp>
-#include <..//luabind/detail/object_rep.hpp>
-#include <..//luabind/detail/class_rep.hpp>
-#include <..//luabind/detail/stack_utils.hpp>
+#ifndef LUABIND_CALL_SHARED_HPP_INCLUDED
+#define LUABIND_CALL_SHARED_HPP_INCLUDED
+#include <luabind/typeid.hpp>
 
-namespace luabind { namespace detail
-{
-	LUABIND_API  void do_call_member_selection(lua_State* L, char const* name)
-	{
-		object_rep* obj = static_cast<object_rep*>(lua_touserdata(L, -1));
-		lua_pop(L, 1); // pop self
+namespace luabind {
+	namespace detail {
 
-		obj->crep()->get_table(L); // push the crep table
-		lua_pushstring(L, name);
-		lua_gettable(L, -2);
-		lua_remove(L, -2); // remove the crep table
-
+		inline void call_error(lua_State* L)
 		{
-			if (!lua_iscfunction(L, -1)) return;
-			if (lua_getupvalue(L, -1, 3) == 0) return;
-			detail::stack_pop p(L, 1);
-			if (lua_touserdata(L, -1) != reinterpret_cast<void*>(0x1337)) return;
+#ifndef LUABIND_NO_EXCEPTIONS
+			throw luabind::error(L);
+#else
+			error_callback_fun e = get_error_callback();
+			if(e)
+				e(L);
+			else
+			{
+				assert(false && "the lua function threw an error and error callback is not set.");
+				std::terminate();
+			}
+#endif
 		}
 
-		// this (usually) means the function has not been
-		// overridden by lua, call the default implementation
-		lua_pop(L, 1);
-		obj->crep()->get_default_table(L); // push the crep table
-		lua_pushstring(L, name);
-		lua_gettable(L, -2);
-		assert(!lua_isnil(L, -1));
-		lua_remove(L, -2); // remove the crep table
+		template<typename T>
+		void cast_error(lua_State* L)
+		{
+#ifndef LUABIND_NO_EXCEPTIONS
+			throw cast_failed(L, typeid(T));
+#else
+			cast_failed_callback_fun e = get_cast_failed_callback();
+			if(e)
+				e(L, typeid(T));
+			else
+			{
+				assert(false && "the lua function threw an error and error callback is not set.");
+				std::terminate();
+			}
+#endif
+		}
+
+		template< typename... Args >
+		void expand_hack(Args... /*args*/)
+		{}
+
 	}
-}}
+}
+
+#endif

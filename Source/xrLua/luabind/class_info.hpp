@@ -20,39 +20,30 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
 // OR OTHER DEALINGS IN THE SOFTWARE.
 
-#define LUA_LIB
-#include "..//luabind/config.hpp"
-#include <..//luabind/lua_include.hpp>
-#include <..//luabind/detail/object_rep.hpp>
-#include <..//luabind/detail/class_rep.hpp>
-#include <..//luabind/detail/stack_utils.hpp>
+#ifndef LUABIND_CLASS_INFO_HPP_INCLUDED
+#define LUABIND_CLASS_INFO_HPP_INCLUDED
 
-namespace luabind { namespace detail
+#include <luabind/prefix.hpp>
+#include <luabind/lua_include.hpp>
+#include <luabind/luabind.hpp>
+#include <luabind/object.hpp>
+
+namespace luabind
 {
-	LUABIND_API  void do_call_member_selection(lua_State* L, char const* name)
-	{
-		object_rep* obj = static_cast<object_rep*>(lua_touserdata(L, -1));
-		lua_pop(L, 1); // pop self
+	struct LUABIND_API class_info
+	{	
+        luabind::string name;
+		object methods;
+		object attributes;
+	};
 
-		obj->crep()->get_table(L); // push the crep table
-		lua_pushstring(L, name);
-		lua_gettable(L, -2);
-		lua_remove(L, -2); // remove the crep table
+	LUABIND_API class_info get_class_info(argument const&);
 
-		{
-			if (!lua_iscfunction(L, -1)) return;
-			if (lua_getupvalue(L, -1, 3) == 0) return;
-			detail::stack_pop p(L, 1);
-			if (lua_touserdata(L, -1) != reinterpret_cast<void*>(0x1337)) return;
-		}
+	// returns a table of bound class names
+	LUABIND_API object get_class_names(lua_State* L);
 
-		// this (usually) means the function has not been
-		// overridden by lua, call the default implementation
-		lua_pop(L, 1);
-		obj->crep()->get_default_table(L); // push the crep table
-		lua_pushstring(L, name);
-		lua_gettable(L, -2);
-		assert(!lua_isnil(L, -1));
-		lua_remove(L, -2); // remove the crep table
-	}
-}}
+	LUABIND_API void bind_class_info(lua_State*);
+}
+
+#endif
+

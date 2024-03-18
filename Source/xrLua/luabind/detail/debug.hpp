@@ -20,39 +20,40 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
 // OR OTHER DEALINGS IN THE SOFTWARE.
 
-#define LUA_LIB
-#include "..//luabind/config.hpp"
-#include <..//luabind/lua_include.hpp>
-#include <..//luabind/detail/object_rep.hpp>
-#include <..//luabind/detail/class_rep.hpp>
-#include <..//luabind/detail/stack_utils.hpp>
+#ifndef LUABIND_DEBUG_HPP_INCLUDED
+#define LUABIND_DEBUG_HPP_INCLUDED
 
-namespace luabind { namespace detail
-{
-	LUABIND_API  void do_call_member_selection(lua_State* L, char const* name)
-	{
-		object_rep* obj = static_cast<object_rep*>(lua_touserdata(L, -1));
-		lua_pop(L, 1); // pop self
+#ifndef NDEBUG
 
-		obj->crep()->get_table(L); // push the crep table
-		lua_pushstring(L, name);
-		lua_gettable(L, -2);
-		lua_remove(L, -2); // remove the crep table
+#include <luabind/lua_include.hpp>
+#include <cassert>
 
+namespace luabind {
+	namespace detail {
+
+		struct stack_checker_type
 		{
-			if (!lua_iscfunction(L, -1)) return;
-			if (lua_getupvalue(L, -1, 3) == 0) return;
-			detail::stack_pop p(L, 1);
-			if (lua_touserdata(L, -1) != reinterpret_cast<void*>(0x1337)) return;
-		}
+			stack_checker_type(lua_State* L)
+				: m_L(L)
+				, m_stack(lua_gettop(m_L))
+			{}
 
-		// this (usually) means the function has not been
-		// overridden by lua, call the default implementation
-		lua_pop(L, 1);
-		obj->crep()->get_default_table(L); // push the crep table
-		lua_pushstring(L, name);
-		lua_gettable(L, -2);
-		assert(!lua_isnil(L, -1));
-		lua_remove(L, -2); // remove the crep table
+			~stack_checker_type()
+			{
+				assert(m_stack == lua_gettop(m_L));
+			}
+
+			lua_State* m_L;
+			int m_stack;
+		};
+
 	}
-}}
+}
+
+#define LUABIND_CHECK_STACK(L) luabind::detail::stack_checker_type stack_checker_object(L)
+#else
+#define LUABIND_CHECK_STACK(L) do {} while (0)
+#endif
+
+#endif // LUABIND_DEBUG_HPP_INCLUDED
+

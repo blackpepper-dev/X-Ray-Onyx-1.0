@@ -20,39 +20,44 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
 // OR OTHER DEALINGS IN THE SOFTWARE.
 
-#define LUA_LIB
-#include "..//luabind/config.hpp"
-#include <..//luabind/lua_include.hpp>
-#include <..//luabind/detail/object_rep.hpp>
-#include <..//luabind/detail/class_rep.hpp>
-#include <..//luabind/detail/stack_utils.hpp>
 
-namespace luabind { namespace detail
-{
-	LUABIND_API  void do_call_member_selection(lua_State* L, char const* name)
-	{
-		object_rep* obj = static_cast<object_rep*>(lua_touserdata(L, -1));
-		lua_pop(L, 1); // pop self
+#ifndef LUABIND_PRIMITIVES_HPP_INCLUDED
+#define LUABIND_PRIMITIVES_HPP_INCLUDED
 
-		obj->crep()->get_table(L); // push the crep table
-		lua_pushstring(L, name);
-		lua_gettable(L, -2);
-		lua_remove(L, -2); // remove the crep table
+	// std::reference_wrapper...
+#include <type_traits>  // std::true_type...
+#include <cstring>
 
+namespace luabind {
+	namespace detail {
+
+		template<class T>
+		struct type_ {};
+
+		struct ltstr
 		{
-			if (!lua_iscfunction(L, -1)) return;
-			if (lua_getupvalue(L, -1, 3) == 0) return;
-			detail::stack_pop p(L, 1);
-			if (lua_touserdata(L, -1) != reinterpret_cast<void*>(0x1337)) return;
+			bool operator()(const char* s1, const char* s2) const { return std::strcmp(s1, s2) < 0; }
+		};
+
+		template<int N>
+		struct aligned
+		{
+			char storage[N];
+		};
+
+		// returns the offset added to a Derived* when cast to a Base*
+		template<class Derived, class Base>
+		ptrdiff_t ptr_offset(type_<Derived>, type_<Base>)
+		{
+			aligned<sizeof(Derived)> obj;
+			Derived* ptr = reinterpret_cast<Derived*>(&obj);
+
+			return ptrdiff_t(static_cast<char*>(static_cast<void*>(static_cast<Base*>(ptr)))
+				- static_cast<char*>(static_cast<void*>(ptr)));
 		}
 
-		// this (usually) means the function has not been
-		// overridden by lua, call the default implementation
-		lua_pop(L, 1);
-		obj->crep()->get_default_table(L); // push the crep table
-		lua_pushstring(L, name);
-		lua_gettable(L, -2);
-		assert(!lua_isnil(L, -1));
-		lua_remove(L, -2); // remove the crep table
 	}
-}}
+}
+
+#endif // LUABIND_PRIMITIVES_HPP_INCLUDED
+

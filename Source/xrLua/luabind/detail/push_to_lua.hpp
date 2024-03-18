@@ -20,39 +20,55 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
 // OR OTHER DEALINGS IN THE SOFTWARE.
 
-#define LUA_LIB
-#include "..//luabind/config.hpp"
-#include <..//luabind/lua_include.hpp>
-#include <..//luabind/detail/object_rep.hpp>
-#include <..//luabind/detail/class_rep.hpp>
-#include <..//luabind/detail/stack_utils.hpp>
 
-namespace luabind { namespace detail
-{
-	LUABIND_API  void do_call_member_selection(lua_State* L, char const* name)
-	{
-		object_rep* obj = static_cast<object_rep*>(lua_touserdata(L, -1));
-		lua_pop(L, 1); // pop self
+#ifndef LUABIND_CONVERT_TO_LUA_HPP_INCLUDED
+#define LUABIND_CONVERT_TO_LUA_HPP_INCLUDED
 
-		obj->crep()->get_table(L); // push the crep table
-		lua_pushstring(L, name);
-		lua_gettable(L, -2);
-		lua_remove(L, -2); // remove the crep table
+#include <luabind/config.hpp>
+#include <luabind/detail/policy.hpp>
+#include <luabind/detail/type_traits.hpp>
 
+namespace luabind {
+
+	namespace detail {
+
+		template< typename T >
+		struct unwrapped {
+			static const bool is_wrapped_ref = false;
+			using type = T;
+
+			static const T& get(const T& t) {
+				return t;
+			}
+		};
+
+		template< typename T >
+		struct unwrapped< std::reference_wrapper< T > >
 		{
-			if (!lua_iscfunction(L, -1)) return;
-			if (lua_getupvalue(L, -1, 3) == 0) return;
-			detail::stack_pop p(L, 1);
-			if (lua_touserdata(L, -1) != reinterpret_cast<void*>(0x1337)) return;
+			static const bool is_wrapped_ref = true;
+			using type = T&;
+
+			static T& get(const std::reference_wrapper<T>& refwrap)
+			{
+				return refwrap.get();
+			}
+		};
+
+		template<typename T>
+		using unwrapped_t = typename unwrapped< T >::type;
+
+		template<unsigned int PolicyIndex = 1, typename Policies = no_policies, typename T>
+		void push_to_lua(lua_State* L, T&& v)
+		{
+			using value_type = unwrapped_t<remove_const_reference_t<T>>;
+
+			specialized_converter_policy_n<PolicyIndex, Policies, value_type, cpp_to_lua>()
+				.to_lua(L, unwrapped<T>::get(v));
 		}
 
-		// this (usually) means the function has not been
-		// overridden by lua, call the default implementation
-		lua_pop(L, 1);
-		obj->crep()->get_default_table(L); // push the crep table
-		lua_pushstring(L, name);
-		lua_gettable(L, -2);
-		assert(!lua_isnil(L, -1));
-		lua_remove(L, -2); // remove the crep table
 	}
-}}
+
+}
+
+#endif
+

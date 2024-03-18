@@ -20,39 +20,43 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
 // OR OTHER DEALINGS IN THE SOFTWARE.
 
-#define LUA_LIB
-#include "..//luabind/config.hpp"
-#include <..//luabind/lua_include.hpp>
-#include <..//luabind/detail/object_rep.hpp>
-#include <..//luabind/detail/class_rep.hpp>
-#include <..//luabind/detail/stack_utils.hpp>
+#ifndef LUABIND_LINK_COMPATIBILITY_HPP_INCLUDED
+#define LUABIND_LINK_COMPATIBILITY_HPP_INCLUDED
 
-namespace luabind { namespace detail
-{
-	LUABIND_API  void do_call_member_selection(lua_State* L, char const* name)
-	{
-		object_rep* obj = static_cast<object_rep*>(lua_touserdata(L, -1));
-		lua_pop(L, 1); // pop self
+#include <luabind/config.hpp>
 
-		obj->crep()->get_table(L); // push the crep table
-		lua_pushstring(L, name);
-		lua_gettable(L, -2);
-		lua_remove(L, -2); // remove the crep table
+namespace luabind {
+	namespace detail {
 
+#ifdef LUABIND_NOT_THREADSAFE
+		LUABIND_API void not_threadsafe_defined_conflict();
+#else
+		LUABIND_API void not_threadsafe_not_defined_conflict();
+#endif
+
+#ifdef LUABIND_NO_ERROR_CHECKING
+		LUABIND_API void no_error_checking_defined_conflict();
+#else
+		LUABIND_API void no_error_checking_not_defined_conflict();
+#endif
+
+		inline void check_link_compatibility()
 		{
-			if (!lua_iscfunction(L, -1)) return;
-			if (lua_getupvalue(L, -1, 3) == 0) return;
-			detail::stack_pop p(L, 1);
-			if (lua_touserdata(L, -1) != reinterpret_cast<void*>(0x1337)) return;
+#ifdef LUABIND_NOT_THREADSAFE
+			not_threadsafe_defined_conflict();
+#else
+			not_threadsafe_not_defined_conflict();
+#endif
+
+#ifdef LUABIND_NO_ERROR_CHECKING
+			no_error_checking_defined_conflict();
+#else
+			no_error_checking_not_defined_conflict();
+#endif
 		}
 
-		// this (usually) means the function has not been
-		// overridden by lua, call the default implementation
-		lua_pop(L, 1);
-		obj->crep()->get_default_table(L); // push the crep table
-		lua_pushstring(L, name);
-		lua_gettable(L, -2);
-		assert(!lua_isnil(L, -1));
-		lua_remove(L, -2); // remove the crep table
 	}
-}}
+}
+
+#endif
+
