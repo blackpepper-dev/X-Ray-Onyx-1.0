@@ -3,12 +3,52 @@
   "WorkspaceRootPath": "D:\\Programming\\X-RayEngine\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5535F6B4-7AE6-4B66-8AEA-CC31C14D7AB7}|Source\\xr_3da\\xrGame\\xrGameSpy\\xrGameSpy.vcxproj|D:\\Programming\\X-RayEngine\\Source\\xr_3da\\xrGame\\xrGameSpy\\xrGameSpy_MainDefs.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5535F6B4-7AE6-4B66-8AEA-CC31C14D7AB7}|Source\\xr_3da\\xrGame\\xrGameSpy\\xrGameSpy.vcxproj|solutionrelative:Source\\xr_3da\\xrGame\\xrGameSpy\\xrGameSpy_MainDefs.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5535F6B4-7AE6-4B66-8AEA-CC31C14D7AB7}|Source\\xr_3da\\xrGame\\xrGameSpy\\xrGameSpy.vcxproj|D:\\Programming\\X-RayEngine\\Source\\xr_3da\\xrGame\\xrGameSpy\\xrGameSpy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5535F6B4-7AE6-4B66-8AEA-CC31C14D7AB7}|Source\\xr_3da\\xrGame\\xrGameSpy\\xrGameSpy.vcxproj|solutionrelative:Source\\xr_3da\\xrGame\\xrGameSpy\\xrGameSpy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5535F6B4-7AE6-4B66-8AEA-CC31C14D7AB7}|Source\\xr_3da\\xrGame\\xrGameSpy\\xrGameSpy.vcxproj|D:\\Programming\\X-RayEngine\\Source\\xr_3da\\xrGame\\xrGameSpy\\xrGameSpy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5535F6B4-7AE6-4B66-8AEA-CC31C14D7AB7}|Source\\xr_3da\\xrGame\\xrGameSpy\\xrGameSpy.vcxproj|solutionrelative:Source\\xr_3da\\xrGame\\xrGameSpy\\xrGameSpy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5535F6B4-7AE6-4B66-8AEA-CC31C14D7AB7}|Source\\xr_3da\\xrGame\\xrGameSpy\\xrGameSpy.vcxproj|D:\\Programming\\X-RayEngine\\Source\\xr_3da\\xrGame\\xrGameSpy\\xrGameSpy_Patching.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5535F6B4-7AE6-4B66-8AEA-CC31C14D7AB7}|Source\\xr_3da\\xrGame\\xrGameSpy\\xrGameSpy.vcxproj|solutionrelative:Source\\xr_3da\\xrGame\\xrGameSpy\\xrGameSpy_Patching.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5535F6B4-7AE6-4B66-8AEA-CC31C14D7AB7}|Source\\xr_3da\\xrGame\\xrGameSpy\\xrGameSpy.vcxproj|D:\\Programming\\X-RayEngine\\Source\\xr_3da\\xrGame\\xrGameSpy\\xrGameSpy_Patching.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5535F6B4-7AE6-4B66-8AEA-CC31C14D7AB7}|Source\\xr_3da\\xrGame\\xrGameSpy\\xrGameSpy.vcxproj|solutionrelative:Source\\xr_3da\\xrGame\\xrGameSpy\\xrGameSpy_Patching.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9ACE5473-6D68-4B96-AC42-B39EABA0FE1F}|Source\\xrLua\\xrLua.vcxproj|D:\\Programming\\X-RayEngine\\Source\\xrLua\\luabind\\weak_ref.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9ACE5473-6D68-4B96-AC42-B39EABA0FE1F}|Source\\xrLua\\xrLua.vcxproj|solutionrelative:Source\\xrLua\\luabind\\weak_ref.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9ACE5473-6D68-4B96-AC42-B39EABA0FE1F}|Source\\xrLua\\xrLua.vcxproj|D:\\Programming\\X-RayEngine\\Source\\xrLua\\luabind\\wrapper_base.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9ACE5473-6D68-4B96-AC42-B39EABA0FE1F}|Source\\xrLua\\xrLua.vcxproj|solutionrelative:Source\\xrLua\\luabind\\wrapper_base.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CA2604CA-A2AC-49A1-A468-8AB5A2E6CBC9}|Source\\zlib\\zlib.vcxproj|D:\\Programming\\X-RayEngine\\Source\\zlib\\zutil.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{CA2604CA-A2AC-49A1-A468-8AB5A2E6CBC9}|Source\\zlib\\zlib.vcxproj|solutionrelative:Source\\zlib\\zutil.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CA2604CA-A2AC-49A1-A468-8AB5A2E6CBC9}|Source\\zlib\\zlib.vcxproj|D:\\Programming\\X-RayEngine\\Source\\zlib\\example.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{CA2604CA-A2AC-49A1-A468-8AB5A2E6CBC9}|Source\\zlib\\zlib.vcxproj|solutionrelative:Source\\zlib\\example.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Programming\\X-RayEngine\\Source\\xrLua\\luabind\\types.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Source\\xrLua\\luabind\\types.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Programming\\X-RayEngine\\Source\\xrLua\\luabind\\config.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Source\\xrLua\\luabind\\config.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Programming\\X-RayEngine\\Source\\xrLua\\luabind\\detail\\class_rep.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Source\\xrLua\\luabind\\detail\\class_rep.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +63,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "zutil.h",
-              "DocumentMoniker": "D:\\Programming\\X-RayEngine\\Source\\zlib\\zutil.h",
-              "RelativeDocumentMoniker": "Source\\zlib\\zutil.h",
-              "ToolTip": "D:\\Programming\\X-RayEngine\\Source\\zlib\\zutil.h",
-              "RelativeToolTip": "Source\\zlib\\zutil.h",
-              "ViewState": "AQIAAK0AAAAAAAAAAAAAwMcAAAACAAAA",
+              "Title": "xrGameSpy_MainDefs.h",
+              "DocumentMoniker": "D:\\Programming\\X-RayEngine\\Source\\xr_3da\\xrGame\\xrGameSpy\\xrGameSpy_MainDefs.h",
+              "RelativeDocumentMoniker": "Source\\xr_3da\\xrGame\\xrGameSpy\\xrGameSpy_MainDefs.h",
+              "ToolTip": "D:\\Programming\\X-RayEngine\\Source\\xr_3da\\xrGame\\xrGameSpy\\xrGameSpy_MainDefs.h",
+              "RelativeToolTip": "Source\\xr_3da\\xrGame\\xrGameSpy\\xrGameSpy_MainDefs.h",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAADIAAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-03-17T17:29:00.345Z",
+              "WhenOpened": "2024-03-18T08:14:25.736Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "xrGameSpy.h",
+              "DocumentMoniker": "D:\\Programming\\X-RayEngine\\Source\\xr_3da\\xrGame\\xrGameSpy\\xrGameSpy.h",
+              "RelativeDocumentMoniker": "Source\\xr_3da\\xrGame\\xrGameSpy\\xrGameSpy.h",
+              "ToolTip": "D:\\Programming\\X-RayEngine\\Source\\xr_3da\\xrGame\\xrGameSpy\\xrGameSpy.h",
+              "RelativeToolTip": "Source\\xr_3da\\xrGame\\xrGameSpy\\xrGameSpy.h",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-03-18T08:14:00.925Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "example.c",
-              "DocumentMoniker": "D:\\Programming\\X-RayEngine\\Source\\zlib\\example.c",
-              "RelativeDocumentMoniker": "Source\\zlib\\example.c",
-              "ToolTip": "D:\\Programming\\X-RayEngine\\Source\\zlib\\example.c",
-              "RelativeToolTip": "Source\\zlib\\example.c",
-              "ViewState": "AQIAABECAAAAAAAAAAAIwDUCAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-03-17T17:28:50.729Z",
+              "Title": "xrGameSpy.cpp",
+              "DocumentMoniker": "D:\\Programming\\X-RayEngine\\Source\\xr_3da\\xrGame\\xrGameSpy\\xrGameSpy.cpp",
+              "RelativeDocumentMoniker": "Source\\xr_3da\\xrGame\\xrGameSpy\\xrGameSpy.cpp",
+              "ToolTip": "D:\\Programming\\X-RayEngine\\Source\\xr_3da\\xrGame\\xrGameSpy\\xrGameSpy.cpp",
+              "RelativeToolTip": "Source\\xr_3da\\xrGame\\xrGameSpy\\xrGameSpy.cpp",
+              "ViewState": "AQIAABwAAAAAAAAAAAAQwDQAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-18T08:12:55.889Z",
               "EditorCaption": ""
             },
             {
@@ -53,6 +106,117 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "xrGameSpy_Patching.h",
+              "DocumentMoniker": "D:\\Programming\\X-RayEngine\\Source\\xr_3da\\xrGame\\xrGameSpy\\xrGameSpy_Patching.h",
+              "RelativeDocumentMoniker": "Source\\xr_3da\\xrGame\\xrGameSpy\\xrGameSpy_Patching.h",
+              "ToolTip": "D:\\Programming\\X-RayEngine\\Source\\xr_3da\\xrGame\\xrGameSpy\\xrGameSpy_Patching.h",
+              "RelativeToolTip": "Source\\xr_3da\\xrGame\\xrGameSpy\\xrGameSpy_Patching.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-03-18T08:12:09.738Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "xrGameSpy_Patching.cpp",
+              "DocumentMoniker": "D:\\Programming\\X-RayEngine\\Source\\xr_3da\\xrGame\\xrGameSpy\\xrGameSpy_Patching.cpp",
+              "RelativeDocumentMoniker": "Source\\xr_3da\\xrGame\\xrGameSpy\\xrGameSpy_Patching.cpp",
+              "ToolTip": "D:\\Programming\\X-RayEngine\\Source\\xr_3da\\xrGame\\xrGameSpy\\xrGameSpy_Patching.cpp",
+              "RelativeToolTip": "Source\\xr_3da\\xrGame\\xrGameSpy\\xrGameSpy_Patching.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-18T08:12:01.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "weak_ref.cpp",
+              "DocumentMoniker": "D:\\Programming\\X-RayEngine\\Source\\xrLua\\luabind\\weak_ref.cpp",
+              "RelativeDocumentMoniker": "Source\\xrLua\\luabind\\weak_ref.cpp",
+              "ToolTip": "D:\\Programming\\X-RayEngine\\Source\\xrLua\\luabind\\weak_ref.cpp",
+              "RelativeToolTip": "Source\\xrLua\\luabind\\weak_ref.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-18T07:59:01.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "types.hpp",
+              "DocumentMoniker": "D:\\Programming\\X-RayEngine\\Source\\xrLua\\luabind\\types.hpp",
+              "RelativeDocumentMoniker": "Source\\xrLua\\luabind\\types.hpp",
+              "ToolTip": "D:\\Programming\\X-RayEngine\\Source\\xrLua\\luabind\\types.hpp",
+              "RelativeToolTip": "Source\\xrLua\\luabind\\types.hpp",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAzwAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-03-18T07:58:37.918Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "config.hpp",
+              "DocumentMoniker": "D:\\Programming\\X-RayEngine\\Source\\xrLua\\luabind\\config.hpp",
+              "RelativeDocumentMoniker": "Source\\xrLua\\luabind\\config.hpp",
+              "ToolTip": "D:\\Programming\\X-RayEngine\\Source\\xrLua\\luabind\\config.hpp",
+              "RelativeToolTip": "Source\\xrLua\\luabind\\config.hpp",
+              "ViewState": "AQIAAGoAAAAAAAAAAAAawIAAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-03-18T07:57:28.344Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "class_rep.hpp",
+              "DocumentMoniker": "D:\\Programming\\X-RayEngine\\Source\\xrLua\\luabind\\detail\\class_rep.hpp",
+              "RelativeDocumentMoniker": "Source\\xrLua\\luabind\\detail\\class_rep.hpp",
+              "ToolTip": "D:\\Programming\\X-RayEngine\\Source\\xrLua\\luabind\\detail\\class_rep.hpp",
+              "RelativeToolTip": "Source\\xrLua\\luabind\\detail\\class_rep.hpp",
+              "ViewState": "AQIAACYAAAAAAAAAAAAUwNEAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-03-18T07:50:26.025Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "wrapper_base.cpp",
+              "DocumentMoniker": "D:\\Programming\\X-RayEngine\\Source\\xrLua\\luabind\\wrapper_base.cpp",
+              "RelativeDocumentMoniker": "Source\\xrLua\\luabind\\wrapper_base.cpp",
+              "ToolTip": "D:\\Programming\\X-RayEngine\\Source\\xrLua\\luabind\\wrapper_base.cpp",
+              "RelativeToolTip": "Source\\xrLua\\luabind\\wrapper_base.cpp",
+              "ViewState": "AQIAABcAAAAAAAAAAAAxwCYAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-18T07:43:27.926Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "zutil.h",
+              "DocumentMoniker": "D:\\Programming\\X-RayEngine\\Source\\zlib\\zutil.h",
+              "RelativeDocumentMoniker": "Source\\zlib\\zutil.h",
+              "ToolTip": "D:\\Programming\\X-RayEngine\\Source\\zlib\\zutil.h",
+              "RelativeToolTip": "Source\\zlib\\zutil.h",
+              "ViewState": "AQIAAJUAAAAAAAAAAAAAwLkAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-03-17T17:29:00.345Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "example.c",
+              "DocumentMoniker": "D:\\Programming\\X-RayEngine\\Source\\zlib\\example.c",
+              "RelativeDocumentMoniker": "Source\\zlib\\example.c",
+              "ToolTip": "D:\\Programming\\X-RayEngine\\Source\\zlib\\example.c",
+              "RelativeToolTip": "Source\\zlib\\example.c",
+              "ViewState": "AQIAABECAAAAAAAAAAAIwDUCAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-03-17T17:28:50.729Z"
             }
           ]
         }

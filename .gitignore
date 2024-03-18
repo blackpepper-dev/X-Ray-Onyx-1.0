@@ -10,3 +10,8 @@
 *.exe
 /.vs
 *.idb
+/.vs/XRayEngine/v17
+/.vs/XRayEngine
+/.vs
+*.bin
+*.json
